@@ -15,6 +15,10 @@ int main()
 
     // Create vendingMachine object. Constructor will be called with no parameters.
     VendingMachine vendingMachine;
+
+    // Showing who da boss is at start up.
+    vendingMachine.showOwner("Martin D. Hermansen");
+
     // Print inventory using public printInventory member function (method).
     vendingMachine.printInventory();
 

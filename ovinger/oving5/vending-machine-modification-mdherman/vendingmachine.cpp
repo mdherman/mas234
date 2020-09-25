@@ -7,8 +7,13 @@ VendingMachine::VendingMachine()
     : sodaTypes_()  // Initialization of sodaTypes_ vector. Explicit call to the constructor.
 {
     std::cout << "Vending machine object constructed!" << std::endl;
+
 }
 
+// At startup, describing the owner.
+void VendingMachine::showOwner(std::string owner){
+    std::cout << "Vending machine is owned by " << owner << std::endl;
+}
 
 // Will be called when the object is deleted. Could do clean-up tasks here.
 VendingMachine::~VendingMachine()
@@ -28,4 +33,10 @@ void VendingMachine::addType(Soda s)
 void VendingMachine::printInventory()
 {
     std::cout << "Number of soda types registered: " << sodaTypes_.size() << std::endl;
+}
+
+// Printing menu.
+void VendingMachine::printMenu(){
+    std::cout << "Here is the menu:" << std::endl;
+
 }

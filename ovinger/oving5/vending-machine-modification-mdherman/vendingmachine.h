@@ -26,6 +26,13 @@ public:
     // Member function. Returns nothing and takes no parameters.
     void printInventory();
 
+    // Member function. Describes the owner.
+    void showOwner(std::string owner);
+
+    // Menu function.
+    void printMenu();
+
+
 
 private:
 
